@@ -10,4 +10,4 @@ internal class Program
         var summary = BenchmarkRunner.Run<BenchmarkCardidy>();
     }
 
-    Console.WriteLine{(summary)}
+    Console.WriteLinesummary}

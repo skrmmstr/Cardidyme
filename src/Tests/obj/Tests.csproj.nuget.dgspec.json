@@ -10,11 +10,11 @@
         "projectUniqueName": "/home/noodle/Cardidy/src/DEdge.Cardidy/DEdge.Cardidy.csproj",
         "projectName": "DEdge.Cardidy",
         "projectPath": "/home/noodle/Cardidy/src/DEdge.Cardidy/DEdge.Cardidy.csproj",
-        "packagesPath": "/home/noodle/.nuget/packages/",
+        "packagesPath": "/root/.nuget/packages/",
         "outputPath": "/home/noodle/Cardidy/src/DEdge.Cardidy/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/noodle/.nuget/NuGet/NuGet.Config"
+          "/root/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -66,11 +66,11 @@
         "projectUniqueName": "/home/noodle/Cardidy/src/Tests/Tests.csproj",
         "projectName": "Tests",
         "projectPath": "/home/noodle/Cardidy/src/Tests/Tests.csproj",
-        "packagesPath": "/home/noodle/.nuget/packages/",
+        "packagesPath": "/root/.nuget/packages/",
         "outputPath": "/home/noodle/Cardidy/src/Tests/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/noodle/.nuget/NuGet/NuGet.Config"
+          "/root/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"

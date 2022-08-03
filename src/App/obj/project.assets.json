@@ -6900,7 +6900,7 @@
     ]
   },
   "packageFolders": {
-    "/home/noodle/.nuget/packages/": {}
+    "/root/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
@@ -6908,11 +6908,11 @@
       "projectUniqueName": "/home/noodle/Cardidy/src/App/App.csproj",
       "projectName": "App",
       "projectPath": "/home/noodle/Cardidy/src/App/App.csproj",
-      "packagesPath": "/home/noodle/.nuget/packages/",
+      "packagesPath": "/root/.nuget/packages/",
       "outputPath": "/home/noodle/Cardidy/src/App/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/noodle/.nuget/NuGet/NuGet.Config"
+        "/root/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
