@@ -180,7 +180,7 @@
     ]
   },
   "packageFolders": {
-    "/root/.nuget/packages/": {}
+    "/home/noodle/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
@@ -188,11 +188,11 @@
       "projectUniqueName": "/home/noodle/Cardidy/src/DEdge.Cardidy/DEdge.Cardidy.csproj",
       "projectName": "DEdge.Cardidy",
       "projectPath": "/home/noodle/Cardidy/src/DEdge.Cardidy/DEdge.Cardidy.csproj",
-      "packagesPath": "/root/.nuget/packages/",
+      "packagesPath": "/home/noodle/.nuget/packages/",
       "outputPath": "/home/noodle/Cardidy/src/DEdge.Cardidy/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/root/.nuget/NuGet/NuGet.Config"
+        "/home/noodle/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"

@@ -16,7 +16,6 @@ RUN dotnet restore "src/App/App.csproj"
 COPY . .
 WORKDIR "/src/src/App"
 RUN dotnet build "DEdge.cardidy" -c Release -o /app/build
-
 FROM build AS publish
 RUN dotnet publish "App.csproj" -c Release -o /app/publish /p:UseAppHost=false
 

@@ -129,7 +129,7 @@
     ]
   },
   "packageFolders": {
-    "/root/.nuget/packages/": {}
+    "/home/noodle/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
@@ -137,11 +137,11 @@
       "projectUniqueName": "/home/noodle/Cardidy/src/AppFs/AppFs.fsproj",
       "projectName": "AppFs",
       "projectPath": "/home/noodle/Cardidy/src/AppFs/AppFs.fsproj",
-      "packagesPath": "/root/.nuget/packages/",
+      "packagesPath": "/home/noodle/.nuget/packages/",
       "outputPath": "/home/noodle/Cardidy/src/AppFs/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/root/.nuget/NuGet/NuGet.Config"
+        "/home/noodle/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
