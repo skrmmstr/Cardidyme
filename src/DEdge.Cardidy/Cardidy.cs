@@ -32,7 +32,7 @@ public static class Cardidy
 
         new BankCard(),
         new UkrCard(),
-        new ChinaTUnion(),
+        new ChinaTUnion(), 
         new InterPayment(),
         new RuPay(),
         new InstaPayment(),

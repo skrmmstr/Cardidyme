@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DEdge.Cardidy</name>
+    </assembly>
+    <members>
+        <member name="T:DEdge.Cardidy">
+            <summary>
+            Validate or identify card number and cvv with Cardidy
+            </summary>
+        </member>
+        <member name="M:DEdge.Cardidy.Identify(System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Pass card number and it will return issuing network if found
+            </summary>
+            <remarks>
+            This function doesn't use regex, instead it compares digit by digit. 
+            Because we're not using regex in this function, it's easier to maintain.
+            Most card type detection tutorials and libraries use regular expressions without references, often omitting or incorrectly detecting card types.
+            This <a href="https://web.archive.org/web/20180904130300/https://creditcardjs.com/credit-card-type-detection">guide</a> explains the card type detection process.
+            The closer we are to an official spec is the <a href="https://en.wikipedia.org/wiki/Payment_card_number#Issuer_identification_number_(IIN)">Wikipedia's Payment card number page</a>.
+            This library aims to follow it.
+            </remarks>
+            <param name="number">The card number to identify</param>
+            <param name="validateLength">Validate the length as part of the string identification. A false value can be useful to identify the fragment of a card number. Default is true.</param>
+            <param name="useCheck">Validate the card number as part of the string identification. A false value can be useful to identify the fragment of a card number. The validation will be the issuing network's validation, mostly Luhn. Default is true.</param>
+            <param name="ignoreNoise">Ignore common noise found in card number. This noise is any of `- .`. Default is false.</param>
+            <param name="handleAnonymization">Set any non-digits to zero. It is common to use "X" and "#" to hide some digits. Default is false.</param>
+            <example>
+            <code>
+            var card = "4771320594033";
+            var isVisa = Cardidy.Identify(card) == CardType.Visa;
+            </code>
+            </example>
+            <returns>The issuing network identified.</returns>
+        </member>
+        <member name="M:DEdge.Cardidy.IsCvvValid(System.String,DEdge.CardType)">
+            <summary>
+            Pass card cvv and it will return its likely validity.
+            </summary>
+            <remarks>
+            This function checks if the cvv contains only digits and if its length matches the given issuing network. 
+            </remarks>
+            <param name="cvv">The cvv to validate</param>
+            <param name="cardType">The identified issuing network</param>
+            <example>
+            <code>
+            var cvv = "123";
+            var visaCvvIsValid = Cardidy.IsCvvValid(CardType.Visa, cvv);
+            </code>
+            </example>
+            <returns>True if it seems alright.</returns>
+        </member>
+        <member name="T:DEdge.CardType">
+            <summary>
+            Current supported CardType
+            </summary>
+        </member>
+        <member name="M:DEdge.Extensions.Measure(System.Int32)">
+             <summary>
+             Measure the 'length' of an integer (e.g. 121 would be 3).
+             </summary>
+             <remarks>
+             Inspired from <a href="https://stackoverflow.com/users/411022/ilmari-karonen">Ilmari Karonen</a>'s <a href="https://stackoverflow.com/a/6865024/1248177">answer</a> published under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 3.0</a> on <a href="https://stackoverflow.com/q/6864991/1248177">How to get the size of a number in .net?</a>.
+            </remarks>
+             <param name="number">The number to measure.</param>
+             <returns>The length measured.</returns>
+        </member>
+        <member name="M:DEdge.Model.ALuhnCard.CheckLuhn(System.Collections.Generic.IEnumerable{System.Int32})">
+            <summary>Compact Luhn check</summary>
+            <remarks>
+            Inspired from <a href="https://stackoverflow.com/users/3395015/garryp">garryp</a>'s
+            <a href="https://stackoverflow.com/a/40491537/1248177">answer</a> published under CC BY-SA 3.0
+            on <a href="https://stackoverflow.com/q/21249670/1248177">implementing luhn algorithm using c#</a>.
+            </remarks>
+            <param name="digits">The card digits to check</param>
+            <returns>true/false depending on valid checkdigit</returns>
+        </member>
+    </members>
+</doc>

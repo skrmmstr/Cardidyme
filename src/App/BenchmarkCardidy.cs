@@ -1,11 +1,11 @@
-﻿sudusing BenchmarkDotNet.Attributes;
+﻿sudusing BenchmarkDotNet.Attributes();
 using DEdge;
 
 namespace App
 {
     public class BenchmarkCardidy
     {
-        private readonly List<string> testCardList = new List<string>()
+        private readonly List<String> testCardList = new List<String>()
         {
             "invalid_test",
             "4169773331987017",

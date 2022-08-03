@@ -1,0 +1,12 @@
+/home/noodle/Cardidy/src/DEdge.Cardidy/bin/Debug/netstandard2.0/DEdge.Cardidy.deps.json
+/home/noodle/Cardidy/src/DEdge.Cardidy/bin/Debug/netstandard2.0/DEdge.Cardidy.dll
+/home/noodle/Cardidy/src/DEdge.Cardidy/bin/Debug/netstandard2.0/DEdge.Cardidy.pdb
+/home/noodle/Cardidy/src/DEdge.Cardidy/bin/Debug/netstandard2.0/DEdge.Cardidy.xml
+/home/noodle/Cardidy/src/DEdge.Cardidy/obj/Debug/netstandard2.0/DEdge.Cardidy.csproj.AssemblyReference.cache
+/home/noodle/Cardidy/src/DEdge.Cardidy/obj/Debug/netstandard2.0/DEdge.Cardidy.GeneratedMSBuildEditorConfig.editorconfig
+/home/noodle/Cardidy/src/DEdge.Cardidy/obj/Debug/netstandard2.0/DEdge.Cardidy.AssemblyInfoInputs.cache
+/home/noodle/Cardidy/src/DEdge.Cardidy/obj/Debug/netstandard2.0/DEdge.Cardidy.AssemblyInfo.cs
+/home/noodle/Cardidy/src/DEdge.Cardidy/obj/Debug/netstandard2.0/DEdge.Cardidy.csproj.CoreCompileInputs.cache
+/home/noodle/Cardidy/src/DEdge.Cardidy/obj/Debug/netstandard2.0/DEdge.Cardidy.dll
+/home/noodle/Cardidy/src/DEdge.Cardidy/obj/Debug/netstandard2.0/DEdge.Cardidy.xml
+/home/noodle/Cardidy/src/DEdge.Cardidy/obj/Debug/netstandard2.0/DEdge.Cardidy.pdb

@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  cardidy:
+    image: cardidy
+    build:
+      context: .
+      dockerfile: ./Dockerfile
