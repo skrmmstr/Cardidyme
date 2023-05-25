@@ -16,6 +16,7 @@ public static class Cardidy
     {
         new AmericanExpress(),
         new Uatp(),
+        new LankaPay(),
         new Jcb(),
         new Mir(),
 
@@ -34,18 +35,22 @@ public static class Cardidy
         new UkrCard(),
         new ChinaTUnion(), 
         new InterPayment(),
+        new NPSPridnestrovie(), // Needs to be before RuPay
         new RuPay(),
         new InstaPayment(),
 
         new Laser(),
+        new Switch(),
 
         new Troy(),
-        new LankaPay(),
         new Humo(),
         new Dankort(),
         new UzCard(),
         new DinersClub(),
-        new DinersClubUsAndCanada()
+        new DinersClubUsAndCanada(),
+        new BORICA(),
+        new Solo(),
+        new GPN()
     };
 
     private const int identificationNumberLength = 8;

@@ -1,4 +1,4 @@
-﻿namespace DEdge.Model;
+namespace DEdge.Model;
 
 // Based on https://en.wikipedia.org/wiki/Payment_card_number
 internal record AmericanExpress : ALuhnCard
@@ -31,9 +31,11 @@ internal record UnionPay : ALuhnCard
     public UnionPay() : base(CardType.UnionPay, 62, From16To19) { }
 }
 
-internal record Verve : ACard
+internal record Verve : ALuhnCard
 {
-    public Verve() : base(CardType.Verve, new[] { new PaddedRange(506099, 506198), new PaddedRange(650002, 650027) }, new[] { 16, 19 })
+    public Verve() : base(CardType.Verve, new[] { 
+        new PaddedRange(506099, 506198), new PaddedRange(650002, 650027), new PaddedRange(507865, 507964) 
+    }, new[] { 16, 18, 19 })
     { }
 }
 
@@ -85,6 +87,13 @@ internal record InterPayment : ALuhnCard
     public InterPayment() : base(CardType.InterPayment, 636, From16To19) { }
 }
 
+internal record NPSPridnestrovie : ALuhnCard
+{
+    public NPSPridnestrovie() : base(CardType.NPSPridnestrovie, new[] { 6054740, 6054741, 6054742, 6054743, 6054744 }, Sixteen)
+    {
+    }
+}
+
 internal record RuPay : ALuhnCard
 {
     public RuPay() : base(CardType.RuPay, new[] { 60, 65, 81, 82, 353, 356, 508 }, Sixteen) { }
@@ -100,12 +109,17 @@ internal record Laser : ALuhnCard
     public Laser() : base(CardType.Laser, new[] { 6304, 6706, 6771, 6709 }, From16To19) { }
 }
 
+internal record Switch : ALuhnCard
+{
+    public Switch() : base(CardType.Switch, new []{4903, 4905, 4911, 4936, 564182, 633110, 6333, 6759}, new[] { 16, 18, 19 }) { }
+}
+
 internal record Troy : ALuhnCard
 {
     public Troy() : base(CardType.Troy, new[] { 65, 9792 }, Sixteen) { }
 }
 
-internal record LankaPay : ACard
+internal record LankaPay : ALuhnCard
 {
     public LankaPay() : base(CardType.LankaPay, 357111, Sixteen) { }
 }
@@ -133,4 +147,19 @@ internal record DinersClub : ALuhnCard
 internal record DinersClubUsAndCanada : ALuhnCard
 {
     public DinersClubUsAndCanada() : base(CardType.DinersClubUsAndCanada, 54, Sixteen) { }
+}
+
+internal record GPN : ACard
+{
+    public GPN() : base(CardType.GPN, new[] { 1, 2, 6, 7, 8, 9 }, Sixteen) { }
+}
+
+internal record BORICA : ALuhnCard
+{
+    public BORICA() : base(CardType.BORICA, 2205, Sixteen) { }
+}
+
+internal record Solo : ALuhnCard
+{
+    public Solo() : base(CardType.Solo, new[] { 6334, 6767 }, new[] { 16, 18, 19 }) { }
 }

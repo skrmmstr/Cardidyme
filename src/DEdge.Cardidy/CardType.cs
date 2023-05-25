@@ -31,6 +31,7 @@ public enum CardType
     RuPay,
     InstaPayment,
     Laser,
+    Switch,
 
     Troy,
     LankaPay,
@@ -38,6 +39,10 @@ public enum CardType
     UzCard,
     Dankort,
     DinersClub,
-    DinersClubUsAndCanada
+    DinersClubUsAndCanada,
+    NPSPridnestrovie,
+    GPN,
+    BORICA,
+    Solo
 #pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
 }
